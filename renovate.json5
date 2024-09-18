@@ -1,0 +1,12 @@
+{
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:best-practices', //See https://docs.renovatebot.com/upgrade-best-practices/#use-the-configbest-practices-preset
+  ],
+  vendir: { //See https://docs.renovatebot.com/modules/manager/vendir/
+    fileMatch: [ ".*/vendir\\.yml", ".*/vendir-.*\\.yml"]
+  },
+}
+
+
+

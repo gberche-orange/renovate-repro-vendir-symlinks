@@ -1,0 +1,14 @@
+apiVersion: vendir.k14s.io/v1alpha1
+kind: Config
+directories:
+- path: cf-deployment
+  contents:
+  - path: .
+    git:
+      url: https://github.com/cloudfoundry/cf-deployment/
+      ref: v26.7.0
+    includePaths:
+    - "operations/experimental/**"
+
+
+
